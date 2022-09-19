@@ -189,6 +189,10 @@ export const StyledMarkdown = styled.div`
     margin: 0;
 
     line-height: 1.2;
+
+    & > * {
+      margin: 16px 0px;
+    }
   }
 
   & pre {
