@@ -94,7 +94,7 @@ const ResumePage = () => (
           Twitch Partnership Party 2020 등이 있습니다.
         </Description>
       </div>
-      <div>
+      {/* <div>
         <StyledH6>
           <Link
             link="https://rokaf.airforce.mil.kr/airforce/index.do"
@@ -114,7 +114,7 @@ const ResumePage = () => (
           </Link>
           에서 최종 1등의 성적을 거두었으며 공군 참모총장상을 수여 받았습니다.
         </Description>
-      </div>
+      </div>*/}
     </Resume>
   </Layout>
 );
