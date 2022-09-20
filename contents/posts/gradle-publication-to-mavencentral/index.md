@@ -249,6 +249,7 @@ Gradle 프로젝트를 Maven Central에 배포하는 첫 걸음은 <u>배포 권
    ![](2.png)
 1. 아래 그림과 같이 모든 테스트에서 통과되면 'Event: Repository closed'라는 메시지가 표시됩니다.
    ![](3.png)
+1. 마지막으로 상단의 'Release' 버튼을 클릭하세요.
 
 ## 레퍼런스
 
