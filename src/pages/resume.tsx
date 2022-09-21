@@ -86,9 +86,9 @@ const ResumePage = () => (
           <Muted>2020.08.-2021.12.</Muted>
         </StyledH6>
         <Description>
-          샌드박스 네트워크에서 프리랜서 자격으로 비대면 행사 운영 사업에서
-          시스템 책임을 담당했습니다. AWS CDK를 통한 클라우드 배포 자동화 및
-          JetBrains 도구를 통한 DevOps 설계•구성을 담당하였으며 Backend 개발에
+          샌드박스 네트워크에서 프리랜서로 비대면 행사 운영 사업에서 시스템
+          책임을 담당했습니다. AWS CDK를 통한 클라우드 배포 자동화 및 JetBrains
+          도구를 통한 DevOps 설계•구성을 담당하였으며 Backend 개발에
           참여했습니다. 주요 프로젝트로 궁중문화축전(문화재청, 한국문화재재단),
           노담(No 담배) 캠페인(보건복지부), 사이버과학관(국립과천과학관) 및
           Twitch Partnership Party 2020 등이 있습니다.
