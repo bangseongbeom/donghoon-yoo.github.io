@@ -1,0 +1,126 @@
+.navigation {
+  @apply w-full h-full;
+
+  @apply flex flex-col gap-0;
+  @apply overflow-y-hidden;
+
+  @apply lg:rounded-r-lg;
+
+  @apply text-zinc-900;
+
+  @apply bg-zinc-100/90 backdrop-blur;
+  @apply lg:bg-zinc-50;
+  @apply lg:border-r lg:border-zinc-200;
+
+  @apply shadow-zinc-500/10;
+  box-shadow: 0 0 1em var(--tw-shadow-color);
+
+  @apply font-medium tracking-tight leading-none;
+
+  .top {
+    @apply flex flex-row justify-between items-center;
+    @apply lg:rounded-br-lg;
+    @apply p-4;
+    @apply border-b border-zinc-200;
+
+    .toggle {
+      @apply w-4 h-2;
+      @apply relative;
+      @apply block lg:hidden;
+
+      .bar {
+        @apply w-full h-0.5;
+        @apply absolute;
+        @apply bg-zinc-800;
+        @apply transition-all duration-200 ease-out;
+        content: ' ';
+
+        &:first-child {
+          @apply top-0;
+        }
+
+        &:last-child {
+          @apply top-full;
+        }
+      }
+
+      &.open {
+        .bar {
+          @apply top-1/2;
+
+          &:first-child {
+            @apply rotate-45;
+          }
+
+          &:last-child {
+            @apply -rotate-45;
+          }
+        }
+      }
+    }
+  }
+
+  .branding {
+    @apply flex flex-row items-center gap-4;
+
+    @apply font-extrabold;
+
+    .icon {
+      @apply w-8 h-8;
+      @apply flex justify-center items-center;
+      @apply rounded;
+      @apply shadow-lg shadow-sky-900/20;
+
+      @apply text-sky-50 bg-gradient-to-t from-sky-500 to-sky-400;
+    }
+  }
+
+  .items {
+    @apply flex flex-col gap-2;
+    @apply pt-2 pl-2 pb-2;
+
+    &.root {
+      @apply pr-2;
+    }
+
+    .item {
+      @apply flex flex-col gap-0;
+
+      &.selected > .info {
+        @apply bg-zinc-200/80;
+      }
+
+      .info {
+        @apply flex flex-row items-center gap-2;
+        @apply pt-2 pl-2 pb-2;
+        @apply rounded-md;
+
+        @apply transition-colors duration-200 ease-out;
+
+        .icon {
+          @apply w-6 h-6 p-1.5;
+          @apply flex justify-center items-center;
+          @apply rounded;
+          @apply border border-zinc-200;
+          @apply text-xs font-extrabold;
+
+          @apply fill-zinc-500 text-zinc-900 bg-gradient-to-t from-zinc-100 to-zinc-50;
+
+          .customIcon {
+            @apply w-full h-full;
+            @apply bg-zinc-500;
+
+            -webkit-mask-image: var(--icon);
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            -webkit-mask-size: contain;
+          }
+        }
+
+        .name {
+          @apply text-sm font-bold;
+        }
+      }
+    }
+  }
+}

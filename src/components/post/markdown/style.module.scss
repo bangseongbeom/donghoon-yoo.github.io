@@ -1,0 +1,70 @@
+.markdown {
+  @apply flex flex-col gap-4;
+  @apply text-base font-medium leading-relaxed;
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply mt-8 mb-4;
+    @apply tracking-tight;
+
+    @apply w-full relative;
+
+    &::after {
+      @apply absolute -bottom-4 left-0;
+      @apply w-full h-0.5;
+      @apply bg-gradient-to-r from-zinc-700/20;
+      content: ' ';
+    }
+  }
+
+  a {
+    @apply text-blue-500 decoration-blue-500;
+    @apply hover:underline;
+  }
+
+  li {
+    @apply pl-2;
+
+    & > ul, ol, pre {
+      @apply pt-2;
+    }
+  }
+
+  ul, ol {
+    @apply flex flex-col gap-2;
+    @apply pl-8;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  .inlineCode {
+    @apply rounded-lg overflow-hidden;
+    @apply bg-white bg-gradient-to-t from-zinc-100/40 to-zinc-100/20;
+    @apply border border-zinc-200;
+    @apply shadow-md shadow-zinc-500/10;
+    @apply px-2 py-1;
+    @apply align-[0.2em];
+
+    @apply text-xs;
+
+    font-family: "JetBrains Mono", "Pretendard Variable", serif;
+  }
+
+  .monaco {
+    @apply rounded-lg overflow-hidden;
+    @apply bg-white bg-gradient-to-t from-zinc-100/40 to-zinc-100/20;
+    @apply border border-zinc-200;
+    @apply shadow-md shadow-zinc-500/10;
+
+    * {
+      word-break: unset;
+      white-space: unset;
+      font-family: "JetBrains Mono", "Pretendard Variable", serif;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.layout {
+  @apply flex flex-row;
+}
+
+.navigation {
+  @apply fixed h-16 top-0 left-0;
+  @apply border-b border-zinc-200 lg:border-b-0;
+  @apply z-50;
+  @apply transition-all duration-200 ease-out;
+
+  &.open {
+    @apply h-full;
+  }
+}
+
+.navigationSizing {
+  @apply w-full;
+  @apply lg:w-1/4 lg:max-w-xs lg:h-screen;
+  @apply box-border;
+
+  &.dummy {
+    @apply hidden lg:block;
+  }
+}
+
+.main {
+  @apply flex-1 min-h-screen;
+  @apply flex flex-col justify-between gap-8 py-8;
+  @apply pt-12 lg:pt-0;
+
+  @apply overflow-y-auto;
+}

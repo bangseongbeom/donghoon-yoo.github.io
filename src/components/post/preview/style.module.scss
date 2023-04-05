@@ -1,0 +1,39 @@
+.link {
+  @apply no-underline;
+}
+
+.postPreview {
+  @apply w-full;
+  @apply p-6 sm:p-8;
+  @apply flex flex-col justify-end items-start;
+  @apply rounded-lg;
+  @apply overflow-hidden;
+
+  @apply bg-white bg-gradient-to-t from-zinc-100/40 to-zinc-100/20;
+  @apply border border-zinc-200;
+  @apply shadow-md shadow-zinc-500/10;
+
+  .content {
+    @apply flex flex-col gap-1;
+
+    @apply leading-none;
+
+    .date {
+      @apply text-xs font-semibold tracking-wider;
+      @apply text-zinc-500;
+      @apply mb-1;
+    }
+
+    .title {
+      @apply text-lg sm:text-xl font-extrabold tracking-tight;
+      @apply text-zinc-900;
+      @apply line-clamp-1;
+    }
+
+    .description {
+      @apply text-xs sm:text-sm font-medium tracking-tight leading-normal;
+      @apply text-zinc-700;
+      @apply line-clamp-1;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  @apply flex flex-col gap-8;
+
+  & > * {
+    @apply py-8;
+    @apply border-t border-zinc-300;
+  }
+
+  .copyright {
+    @apply flex flex-col gap-1;
+
+    .branding {
+      @apply text-2xl font-black tracking-tight;
+      @apply text-zinc-600;
+    }
+
+    .content {
+      @apply flex flex-col gap-0.5;
+
+      .text {
+        @apply text-xs font-medium tracking-tight;
+        @apply text-zinc-400;
+      }
+
+      .legalNotices {
+        @apply text-xs font-medium tracking-normal;
+        @apply text-zinc-400;
+      }
+    }
+  }
+}

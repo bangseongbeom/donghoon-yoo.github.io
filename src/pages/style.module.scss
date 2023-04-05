@@ -1,0 +1,33 @@
+.category {
+  @apply flex-1 h-full;
+  @apply flex flex-col gap-8;
+  @apply py-16;
+
+  .header {
+    @apply flex flex-row gap-2 lg:gap-4 items-center;
+
+    .icon {
+      @apply h-6 lg:h-7;
+    }
+  }
+}
+
+.article {
+  @apply flex flex-col gap-8;
+  @apply py-16;
+
+  .header {
+    @apply flex flex-col gap-4;
+    @apply border-b border-zinc-300;
+    @apply pb-8;
+
+    .date {
+      @apply text-xs font-semibold tracking-wider;
+      @apply text-zinc-500;
+    }
+
+    .title {
+      @apply tracking-tight;
+    }
+  }
+}

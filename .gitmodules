@@ -1,0 +1,7 @@
+[submodule "externals/JetBrainsMono"]
+	path = externals/JetBrainsMono
+	url = https://github.com/JetBrains/JetBrainsMono.git
+[submodule "externals/Font-Awesome-Pro"]
+	path = externals/Font-Awesome-Pro
+	url = https://github.com/FortAwesome/Font-Awesome-Pro.git
+	branch = 5.15.1

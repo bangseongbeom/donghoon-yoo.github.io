@@ -1,0 +1,16 @@
+.container {
+  @apply px-6 sm:px-8;
+  @apply lg:px-0 lg:w-4/5 lg:max-w-screen-md lg:mx-auto;
+}
+
+.wide {
+  @apply lg:px-16 lg:w-full lg:max-w-full;
+}
+
+.gap {
+  @apply flex flex-col gap-8;
+}
+
+.fill {
+  @apply flex-1;
+}
