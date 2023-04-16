@@ -17,8 +17,6 @@ yarn dev
 ```
 
 ## TODO
-
-- Social icons on navigation bar
 - Dark theme
 - MDX
 - Direct link for subject

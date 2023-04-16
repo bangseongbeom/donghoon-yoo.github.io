@@ -17,7 +17,7 @@ export default function Footer() {
             <div className={`${styles.branding} ${merriWeather.className}`}>{metadata.blogName}</div>
             <div className={styles.content}>
               <div className={styles.text}>{metadata.footer.copyright}</div>
-              <div className={styles.legalNotices}>{metadata.footer.legalNotices}</div>
+              <div className={styles.legalNotices}>{metadata.footer.legalNotice}</div>
             </div>
           </div>
         </footer>

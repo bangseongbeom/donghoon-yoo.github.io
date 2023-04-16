@@ -5,6 +5,10 @@
   .icon {
     @apply w-16 h-16;
     @apply fill-zinc-400;
+
+    path {
+      @apply fill-inherit;
+    }
   }
 
   .content {

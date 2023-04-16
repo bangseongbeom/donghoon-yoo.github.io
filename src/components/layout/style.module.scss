@@ -3,7 +3,7 @@
 }
 
 .navigation {
-  @apply fixed h-16 top-0 left-0;
+  @apply fixed h-16 lg:h-screen top-0 left-0;
   @apply border-b border-zinc-200 lg:border-b-0;
   @apply z-50;
   @apply transition-all duration-200 ease-out;

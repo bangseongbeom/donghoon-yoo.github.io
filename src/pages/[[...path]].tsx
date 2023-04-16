@@ -18,8 +18,8 @@ import PostPreview from "@/components/post/preview"
 import styles from "./style.module.scss"
 import DateFormatter from "@/components/DateFormatter"
 import Info from "@/components/layout/info"
-import StarIcon from "@/Font-Awesome-Pro/svgs/solid/star.svg"
 import {metadata} from "@/lib/constants"
+import {faStar} from "@fortawesome/pro-solid-svg-icons"
 
 interface AppProps extends LayoutProps {
   category?: {
@@ -70,7 +70,7 @@ export default function App({category, post, ...props}: AppProps) {
             </div>
             {category.posts.length == 0
               ? <Info
-                Icon={StarIcon}
+                icon={faStar}
                 title={"게시글 없음"}
                 description={"표시할 게시글이 없습니다."}
               />
