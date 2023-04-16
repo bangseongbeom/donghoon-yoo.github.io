@@ -141,6 +141,8 @@
     @apply border-t border-zinc-200;
     @apply overflow-x-scroll;
 
+    scrollbar-width: none;
+
     &::-webkit-scrollbar {
       @apply hidden;
     }
