@@ -25,7 +25,7 @@
 
 .main {
   @apply flex-1 min-h-screen;
-  @apply flex flex-col justify-between gap-8 py-8;
+  @apply flex flex-col justify-between gap-8 pt-8;
   @apply pt-12 lg:pt-0;
 
   @apply overflow-y-auto;

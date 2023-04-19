@@ -20,7 +20,7 @@ type Metadata = {
 
   footer: {
     copyright: string
-    legalNotice: string
+    notices: string[]
   }
 }
 
@@ -54,6 +54,9 @@ export const metadata: Metadata = {
 
   footer: {
     copyright: `© ${new Date().getFullYear()} DongHoon Yoo. All rights reserved.`,
-    legalNotice: "본 사이트에 포함된 상표 등의 모든 권리는 각 저작권자에게 있습니다."
+    notices: [
+      "The rights of all registered trademarks belong to copyright owners.",
+      "This website does not collect all personal information.",
+    ],
   },
 }

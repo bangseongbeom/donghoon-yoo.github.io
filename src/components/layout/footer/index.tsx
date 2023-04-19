@@ -11,17 +11,21 @@ const merriWeather = Merriweather({
 export default function Footer() {
   return (
     <>
-      <Container>
-        <footer className={styles.footer}>
+      <footer className={styles.footer}>
+        <Container>
           <div className={styles.copyright}>
             <div className={`${styles.branding} ${merriWeather.className}`}>{metadata.blogName}</div>
             <div className={styles.content}>
               <div className={styles.text}>{metadata.footer.copyright}</div>
-              <div className={styles.legalNotices}>{metadata.footer.legalNotice}</div>
+              <div className={styles.notices}>
+                {metadata.footer.notices.map((notice, index) =>
+                  <div key={index} className={styles.notice}>{notice}</div>
+                )}
+              </div>
             </div>
           </div>
-        </footer>
-      </Container>
+        </Container>
+      </footer>
     </>
   )
 }
