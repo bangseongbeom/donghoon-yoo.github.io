@@ -127,7 +127,7 @@ export function getAllPosts<T extends keyof PostType>(fields: Array<T>) {
   if ("date" in fields) {
     return data.sort((post1, post2) =>
       // @ts-ignore
-      (post1.date > post2.date ? -1 : 1)
+      (post1.date < post2.date ? -1 : 1)
     )
   } else {
     return data
