@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build && next-sitemap && next build",
     "start": "next start",
     "typecheck": "tsc"
   },
@@ -43,6 +43,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.7",
+    "next-sitemap": "^4.0.7",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4"
   }
